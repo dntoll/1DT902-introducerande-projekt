@@ -1,2 +1,3 @@
-# pycom_course
+# 1DT902, introducerande projekt
+
 
