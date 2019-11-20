@@ -44,6 +44,8 @@ The deadline is ...
 ### Step 1
 Write help() in the pycmkr console, this should give you output like in "goal state 1
 
+### Goal 1. Run help on board
+![Goal state 1](/images/1_goal_state_1.png)
 
 ### Step 2
 Create project folder in Atom
@@ -53,12 +55,11 @@ print("Hello, Name 1, Name 2!")
 ```
 Press upload ![PyMkr Upload Button](/images/upload.png)
 
-## Examination
-
-This examination can be done by your group themselves, you have completed the assignment when the following has been shown.
-
-### Goal 1. Run help on board
-![Goal state 1](/images/1_goal_state_1.png)
-
 ### Goal 2. Run custom code on the board
 ![Goal state 2](/images/1_goal_state_2.png)
+
+
+## Examination
+
+This examination can be done by your group themselves, you have completed the assignment your output is similar to the goal images above.
+
