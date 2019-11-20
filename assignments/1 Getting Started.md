@@ -2,8 +2,19 @@
 
 ## Introduction
 
+## Goals
+ * Setup working environment with both hardware and software.
+ * Upload and run code on the microcontroller
+
 ## Rules
-This assignment is going to be conducted in a group of two students. During the assignment you may discuss the assignment with students outside the group but you are not allowed to show or share your code.
+This task is going to be conducted in a group of two students. 
+During the assignment you may discuss the assignment with students outside the group. 
+You may help other groups but you may NOT do all steps for them.
+Note that these rules change between assignments.
+
+The assingment is done when you have show
+
+The deadline is ... 
 
 ## Ingredients
 
@@ -12,6 +23,8 @@ This assignment is going to be conducted in a group of two students. During the 
  * One LoRa Antenna
  * One Micro-USB-Cable
  * One computer
+ * Atom programming environment https://atom.io/
+  * Pymkr plugin https://atom.io/packages/pymakr
 
 ## Hardware setup
 
@@ -19,9 +32,10 @@ This assignment is going to be conducted in a group of two students. During the 
 
 * Connect the LOPY to the expansion board (doublecheck the direction)
 * Connect the Antenna to the Lopy 866 antenna port (be careful, and note there are three connectors)
-* 
+* Connect the usb-cable to both computer and board
 
 ## Software setup
+ * Download and install Atom
 
 ## Steps
 
