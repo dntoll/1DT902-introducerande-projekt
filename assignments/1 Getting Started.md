@@ -51,6 +51,7 @@ The deadline is ...
 
 ## Software setup
  * Download and install Atom
+ * Install pymakr plugin in Atom (using the package manager, settings Packages) 
 
 ## Steps
 
