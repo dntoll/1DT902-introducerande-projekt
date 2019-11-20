@@ -15,7 +15,7 @@ This assignment is going to be conducted in a group of two students. During the 
 
 ## Hardware setup
 
-![Setup for Getting Started](/images/1_setup.png)
+![Setup for Getting Started](/images/1_hardware.png)
 
 * Connect the LOPY to the expansion board (doublecheck the direction)
 * Connect the Antenna to the Lopy 866 antenna port (be careful, and note there are three connectors)
