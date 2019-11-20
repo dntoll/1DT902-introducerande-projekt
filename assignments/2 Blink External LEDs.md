@@ -34,4 +34,7 @@ recommended 6mA
 
 ## Steps
 
+[![](http://img.youtube.com/vi/Wtd8pp-DW3w/0.jpg)](http://www.youtube.com/watch?v=Wtd8pp-DW3w "")
+
+
 ## Examination
