@@ -20,13 +20,29 @@ The deadline is ...
 
 ## Ingredients
 
+### Hardware
  * One LOPY-4 board
  * One expansion board
  * One LoRa Antenna
  * One Micro-USB-Cable
  * One computer
+
+### Software
  * Atom programming environment https://atom.io/
-  * Pymkr plugin https://atom.io/packages/pymakr
+ * Pymkr plugin https://atom.io/packages/pymakr
+
+### Knowledge components
+ * configure atom
+ * upload code
+ * run code
+ * print() strings to console https://www.w3schools.com/python/ref_func_print.asp
+ * import statements http://wiki.micropython.org/Importing-Modules
+ * for-loops with range() https://www.w3schools.com/python/python_for_loops.asp
+ * pycom.rgbled() https://docs.pycom.io/firmwareapi/pycom/pycom/
+ * time.sleep() https://docs.pycom.io/firmwareapi/micropython/utime/
+ 
+ 
+
 
 ## Hardware setup
 
@@ -80,9 +96,9 @@ Yellow
 Red
 Green
 Yellow
-Red```
+Red
+```
 
 ## Examination
-
-This examination can be done by your group themselves, you have completed the assignment your output is similar to the goal images above.
+This task is examined using self-examination. You have completed the assignment your output is similar to the goal images above. Make sure all students in your group understands every step. 
 
