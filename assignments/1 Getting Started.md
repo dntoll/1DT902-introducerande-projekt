@@ -33,8 +33,8 @@ The deadline is ...
 
 ### Knowledge components
  * configure atom
- * upload code
- * run code
+ * run code in the REPL https://docs.micropython.org/en/latest/reference/repl.html
+ * upload and run code in files
  * print() strings to console https://www.w3schools.com/python/ref_func_print.asp
  * import statements http://wiki.micropython.org/Importing-Modules
  * for-loops with range() https://www.w3schools.com/python/python_for_loops.asp
