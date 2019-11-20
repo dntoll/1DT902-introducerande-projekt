@@ -41,9 +41,11 @@ The deadline is ...
 
 ## Steps
 
+### Step 1
+Write help() in the pycmkr console, this should give you output like in "goal state 1
 
-write help() in the pycmkr console, this should give you output like in "goal state 1
 
+### Step 2
 Create project folder in Atom
 Create a new file (main.py) with the following content but replace "Name 1" and "Name 2" with group members usernames
 ```
@@ -57,5 +59,6 @@ This examination can be done by your group themselves, you have completed the as
 
 ### Goal 1. Run help on board
 ![Goal state 1](/images/1_goal_state_1.png)
+
 ### Goal 2. Run custom code on the board
 ![Goal state 2](/images/1_goal_state_2.png)
