@@ -58,3 +58,4 @@ This examination can be done by your group themselves, you have completed the as
 ### Goal 1. Run help on board
 ![Goal state 1](/images/1_goal_state_1.png)
 ### Goal 2. Run custom code on the board
+![Goal state 2](/images/1_goal_state_2.png)
