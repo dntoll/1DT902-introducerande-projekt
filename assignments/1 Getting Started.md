@@ -42,6 +42,13 @@ The deadline is ...
 ## Steps
 
 
+write help() in the pycmkr console
+
+Create project folder in Atom
+Create a new file (main.py) with the following content 
+```
+print("Hello, World!")
+```
 
 ## Examination
 
