@@ -42,14 +42,19 @@ The deadline is ...
 ## Steps
 
 
-write help() in the pycmkr console
+write help() in the pycmkr console, this should give you output like in "goal state 1
 
 Create project folder in Atom
-Create a new file (main.py) with the following content 
+Create a new file (main.py) with the following content but replace "Name 1" and "Name 2" with group members usernames
 ```
-print("Hello, World!")
+print("Hello, Name 1, Name 2!")
 ```
+Press upload ![PyMkr Upload Button](/images/upload.png)
 
 ## Examination
 
+This examination can be done by your group themselves, you have completed the assignment when the following has been shown.
+
+### Goal 1. Run help on board
 ![Goal state 1](/images/1_goal_state_1.png)
+### Goal 2. Run custom code on the board
