@@ -49,7 +49,7 @@ The deadline is ...
 ![Setup for Getting Started](/images/1_hardware.png)
 
 * Connect the LOPY to the expansion board (doublecheck the direction)
-* Connect the Antenna to the Lopy 866 antenna port (be careful, and note there are three connectors)
+* Connect the Antenna to the Lopy 868MHz/915MHz (LoRa & Sigfox) antenna port (be careful, and note there are three connectors) See here: https://docs.pycom.io/gettingstarted/connection/lopy4/
 * Connect the usb-cable to both computer and board
 
 ## Software setup
