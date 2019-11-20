@@ -3,8 +3,10 @@
 ## Introduction
 
 ## Goals
- * Setup working environment with both hardware and software.
- * Upload and run code on the microcontroller
+ * Connect hardware 
+ * Install Atom and pymkr plugin
+ * Connect to board in Atom and run code in console (on the hardware)
+ * Upload files and run code on the microcontroller
 
 ## Rules
 This task is going to be conducted in a group of two students. 
@@ -39,4 +41,8 @@ The deadline is ...
 
 ## Steps
 
+
+
 ## Examination
+
+![Goal state 1](/images/1_goal_state_1.png)
