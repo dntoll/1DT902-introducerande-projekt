@@ -60,9 +60,14 @@ The deadline is ...
 ### Step 1
 Make sure the LoPy board is connected to a computer with atom and pymkr installed.
 
-Write help() in the pycmkr console, this should give you output like in "goal state 1
+When the board is properly setup you can run micropython code directly on it using the pymakr-console. The output from the commands are sent to the computer so that you can interact with the board. 
 
-#### Expected output 1. Run help on board
+Write help() in the pycmkr console and press enter, this should give you output like in "goal state 1
+```
+>>>help()
+```
+
+#### Expected output 1. Run help() on board
 ![Goal state 1](/images/1_goal_state_1.png)
 
 ### Step 2. Run custom code on the board
@@ -100,5 +105,10 @@ Red
 ```
 
 ## Examination
+When you have completed this assignment you are expected to know:
+ * How to setup a pycom-development environment with Atom and the pymakr plugin.
+ * How to 
+
 This task is examined using self-examination. You have completed the assignment your output is similar to the goal images above. Make sure all students in your group understands every step. 
+
 
