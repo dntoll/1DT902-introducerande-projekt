@@ -29,7 +29,7 @@ The deadline is ...
 
 ### Software
  * Atom programming environment https://atom.io/
- * Pymkr plugin https://atom.io/packages/pymakr
+ * pymakr plugin https://atom.io/packages/pymakr
 
 ### Knowledge components
  * configure atom
@@ -108,8 +108,10 @@ Red
 ## Examination
 When you have completed this assignment you are expected to know:
  * How to setup a pycom-development environment with Atom and the pymakr plugin.
- * How to 
+ * How to run python commands using the console.
+ * How to upload and run code in files using pymakr
+ * How to blink the built in LED
 
-This task is examined using self-examination. You have completed the assignment your output is similar to the goal images above. Make sure all students in your group understands every step. 
+This task is examined using self-examination. Make sure all students in your group understands every step before you proceed.
 
 
