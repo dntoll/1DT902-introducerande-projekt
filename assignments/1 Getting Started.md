@@ -9,14 +9,9 @@
  * Upload files and run code on the microcontroller
 
 ## Rules
-This task is going to be conducted in a group of two students. 
-During the assignment you may discuss the assignment with students outside the group. 
-You may help other groups but you may NOT do all steps for them.
-Note that these rules change between assignments.
+This task is going to be conducted in a group of two students. Both students must be active during all steps of the assignment.
 
-The assingment is done when you have show
-
-The deadline is ... 
+During the assignment you may discuss the assignment with students outside the group. You may help other groups but you may NOT do all steps for them. Note that these rules change between assignments.
 
 ## Ingredients
 
