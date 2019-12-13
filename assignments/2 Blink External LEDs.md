@@ -1,8 +1,15 @@
 # Blink External LED's
 
 ## Goals
+To connect basic circuits.
+To get LED-lights to blink.
+To work with GPIO ports and loops.
 
 ## Rules
+
+This task is going to be conducted in a group of two students. Both students must be active during all steps of the assignment.
+
+During the assignment you may discuss the assignment with students outside the group. You may help other groups but you may NOT do all steps for them. Note that these rules change between assignments.
 
 ## Ingredients
 
@@ -82,5 +89,6 @@ Check yourself so that you know the answers to the following questions.
  * Why do we need a resistor?
  * How can we make the LED's blink faster?
  * Where can you find information about the different hardware limits in the LOPY4 board?
+ * What are the components of a basic LED-circuit and how do we connect them in order for the LED to light up?
 
 
