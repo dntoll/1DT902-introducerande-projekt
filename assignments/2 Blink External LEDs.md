@@ -75,10 +75,12 @@ Now adjust the code so that the three LED's blink as in the following:
 [![](http://img.youtube.com/vi/Wtd8pp-DW3w/0.jpg)](http://www.youtube.com/watch?v=Wtd8pp-DW3w "")
 
 ## Examination
-This task can be self-examined.
+This task can be self-examined. When the LED's blink in the expected sequence you are done with the programming task.
 
 Check yourself so that you know the answers to the following questions.
  * Which leg of the LED is longer, the cathode or the anode?
  * Why do we need a resistor?
+ * How can we make the LED's blink faster?
+ * Where can you find information about the different hardware limits in the LOPY4 board?
 
 
