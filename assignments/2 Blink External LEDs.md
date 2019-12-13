@@ -26,13 +26,13 @@ During the assignment you may discuss the assignment with students outside the g
 
 ### Knowledge components
  * Breadboards (kopplingsdäck) https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all
- * Light Emitting Diode's (LED's) https://en.wikipedia.org/wiki/Light-emitting_diode
- * Resistors (motstånd) https://en.wikipedia.org/wiki/Resistor
  * Basic LED circuit https://en.wikipedia.org/wiki/LED_circuit
+  * Light Emitting Diode's (LED's) https://en.wikipedia.org/wiki/Light-emitting_diode
+  * Resistors (motstånd) https://en.wikipedia.org/wiki/Resistor
  * Microcontroller GPIO https://en.wikipedia.org/wiki/General-purpose_input/output
- * LOPY4 Datasheet https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_LoPy4_v2.pdf 
- * Make a GPIO port an output https://docs.pycom.io/firmwareapi/pycom/machine/pin/
- * Turn GPIO output on and off pin.value([value])
+  * LOPY4 Datasheet https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_LoPy4_v2.pdf 
+  * Make a GPIO port an output https://docs.pycom.io/firmwareapi/pycom/machine/pin/
+  * Turn GPIO output on and off pin.value([value])
  * Make the thread sleep for a second  time.sleep(seconds)
  * Loops 
 
