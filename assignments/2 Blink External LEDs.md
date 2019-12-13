@@ -46,16 +46,11 @@ The Datasheet for LOPY4 says "Absolute MAX per pin 12mA, recommended 6mA" which 
  * Remove the wire going into the red power rail but keep the GND cable.
  * Replace the wires going into the anode of the LED from the red (3V3) power rail with a cable going into port P8 to p10 of the LOPY4.
  * Run the following code
-'''
-from machine import Pin
 
-redLED = Pin("P8", mode=Pin.OUT)
-redLED.value(1)
-'''
+    from machine import Pin
+    redLED = Pin("P8", mode=Pin.OUT)
+    redLED.value(1)
 
-
-
-GND -> Minus rail on breadboard
 
 
 
