@@ -44,9 +44,10 @@ During the assignment you may discuss the assignment with students outside the g
  * Make sure each LED lights up when you connect the USB-cable. 
  
 ### Components 
- * LOPY4 GND <--> Black power rail (BPR)
- * LOPY4 3V3 <--> Red power rail (RPR)
- * RPR <--> [ Anode - LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
+ * <--> means a cable or connection
+ * LOPY4 GND <--> Black Power Rail (BPR)
+ * LOPY4 3V3 <--> Red Power Rail (RPR)
+ * RPR(3V3) <--> [ Anode - LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
  
  ![LED Circuit, Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/LED_circuit.svg/1200px-LED_circuit.svg.png)
  
@@ -75,10 +76,10 @@ redLED.value(0) # Send a 0 to the GPIO to turn the LED off
 ```
 
 ### Components 
- * LOPY4 GND <--> Black power rail (BPR)
- * LOPY4 P8 <--> [ Anode - Red LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
- * LOPY4 P9 <--> [ Anode - Yellow LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
- * LOPY4 P10 <--> [ Anode - Green LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
+ * LOPY4 GND <--> Black Power Rail (BPR)
+ * LOPY4 P8 <--> [ Anode - Red LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
+ * LOPY4 P9 <--> [ Anode - Yellow LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
+ * LOPY4 P10 <--> [ Anode - Green LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
 
 #### Expected output
 
