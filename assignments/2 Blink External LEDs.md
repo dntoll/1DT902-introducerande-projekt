@@ -43,6 +43,10 @@ During the assignment you may discuss the assignment with students outside the g
  * Connect the three LED circuits as in this video https://www.youtube.com/watch?v=yQ2-yVXFMeE but use the power rails as + and - of the battery and use a 560 Ohm resistor. 
  * Make sure each LED lights up when you connect the USB-cable. 
  
+ 1. LOPY4 GND --> Black power rail (BPR)
+ 2. LOPY4 3V3 --> Red power rail (RPR)
+ 3. RPR --> [ Anode - LED - Cathode ] --> [ 560 Ohm resistor ] --> RPR
+ 
  ![LED Circuit, Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/LED_circuit.svg/1200px-LED_circuit.svg.png)
  
 ## Software setup
