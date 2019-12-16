@@ -40,13 +40,18 @@ Connect the breadboard power-rails to GND and 3V3.
  * LOPY4 3V3 <--> Red Power Rail (RPR)
  
 ### The buzzer circuit
-The buzzer is driven directly from the LOPY4 port but using a current reducing resistor. 
+The buzzer is driven directly from the LOPY4 port but using a current reducing resistor. For higher volume it is adviceable to use a driver circuit.
+
  * LOPY4 P6 <--> Buzzer <--> 1k Ohm resistor <--> BPR(GND)
  
 ### The button circuit
-The button has two sides (A and B) that are connected when the button is pressed. 
+The button has two sides (We call them A and B) that are connected when the button is pressed. The button is placed over the breadboard ravine. We connect the A-side to the input port of the microcontroller. We also connect the A side through a 1k Ohm resistor to GND, this pulls the input port voltage down to GND which counts as a LOW (or 0)  when we read the input of the port through our code. The resistor is called a "pull-down resistor". We connect the B side of the button to 3v3. 
+
+When the button is pressed the A and B-sides become connected the input becomes a HIGH (or 1) since we measure on the side now directly connected to 3v3. Please note that a current now runs through the 1kOhm connector. 
+
 ![Button m.nu](https://images.m.nu/data/product/1000w/T1ls6WXfFaXXXCF87Y_030446.jpg)
-  * LOPY4 P11 <--> Button side A <--> 1k Ohm resistor <--> RPR(3v3)
+
+  * LOPY4 P11 <--> Button side A <--> 1k Ohm resistor <--> BPR(GND)
   * Button side B <--> RPR(3v3)
 
 ## Steps
