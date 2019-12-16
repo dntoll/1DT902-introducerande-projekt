@@ -33,11 +33,21 @@ During the assignment you may discuss the assignment with students outside the g
  
 ## Hardware setup
 
+### Breadboard circuit
+Connect the breadboard power-rails to GND and 3V3.
+
+ * LOPY4 GND <--> Black Power Rail (BPR)
+ * LOPY4 3V3 <--> Red Power Rail (RPR)
+ 
 ### The buzzer circuit
-
-Port on LOPY4 --> Buzzer --> 1k Ohm resistor --> GND
-
+The buzzer is driven directly from the LOPY4 port but using a current reducing resistor. 
+ * LOPY4 P6 <--> Buzzer <--> 1k Ohm resistor <--> BPR(GND)
+ 
 ### The button circuit
+The button has two sides (A and B) that are connected when the button is pressed. 
+[Button m.nu](https://images.m.nu/data/product/1000w/T1ls6WXfFaXXXCF87Y_030446.jpg)
+  * LOPY4 P11 <--> Button side A <--> 1k Ohm resistor <--> RPR(3v3)
+  * Button side B <--> RPR(3v3)
 
 ## Steps
 
