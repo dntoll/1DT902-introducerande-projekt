@@ -43,9 +43,10 @@ During the assignment you may discuss the assignment with students outside the g
  * Connect the three LED circuits as in this video https://www.youtube.com/watch?v=yQ2-yVXFMeE but use the power rails as + and - of the battery and use a 560 Ohm resistor. 
  * Make sure each LED lights up when you connect the USB-cable. 
  
- 1. LOPY4 GND --> Black power rail (BPR)
- 2. LOPY4 3V3 --> Red power rail (RPR)
- 3. RPR --> [ Anode - LED - Cathode ] --> [ 560 Ohm resistor ] --> RPR
+### Components 
+ * LOPY4 GND <--> Black power rail (BPR)
+ * LOPY4 3V3 <--> Red power rail (RPR)
+ * RPR <--> [ Anode - LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
  
  ![LED Circuit, Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/LED_circuit.svg/1200px-LED_circuit.svg.png)
  
@@ -67,11 +68,18 @@ The Datasheet for LOPY4 says "Absolute MAX per pin 12mA, recommended 6mA" which 
 ```python
 import time
 from machine import Pin
-redLED = Pin("P6", mode=Pin.OUT) #Make GPIO P8 an output
+redLED = Pin("P8", mode=Pin.OUT) #Make GPIO P8 an output
 redLED.value(1) # Send a 1 to GPIO to turn the LED on
 time.sleep(1) # Sleep for a second
 redLED.value(0) # Send a 0 to the GPIO to turn the LED off
 ```
+
+### Components 
+ * LOPY4 GND <--> Black power rail (BPR)
+ * LOPY4 P8 <--> [ Anode - Red LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
+ * LOPY4 P9 <--> [ Anode - Yellow LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
+ * LOPY4 P10 <--> [ Anode - Green LED - Cathode ] <--> [ 560 Ohm resistor ] <--> RPR
+
 #### Expected output
 
 The Red LED lights up after the LOPY4 has booted, is on for one second and then turns off. The behaviour is repeated if the board is resetted.
