@@ -45,7 +45,7 @@ The buzzer is driven directly from the LOPY4 port but using a current reducing r
  
 ### The button circuit
 The button has two sides (A and B) that are connected when the button is pressed. 
-[Button m.nu](https://images.m.nu/data/product/1000w/T1ls6WXfFaXXXCF87Y_030446.jpg)
+![Button m.nu](https://images.m.nu/data/product/1000w/T1ls6WXfFaXXXCF87Y_030446.jpg)
   * LOPY4 P11 <--> Button side A <--> 1k Ohm resistor <--> RPR(3v3)
   * Button side B <--> RPR(3v3)
 
