@@ -51,8 +51,6 @@ The button has two sides (We call them A and B) that are connected when the butt
 
 When the button is pressed the A and B-sides become connected the input becomes a HIGH (or 1) since we measure on the side now directly connected to 3v3. Please note that a current now runs through the 1kOhm connector. 
 
-![Button m.nu](https://images.m.nu/data/product/1000w/T1ls6WXfFaXXXCF87Y_030446.jpg)
-
   * LOPY4 P11 <--> Button side A <--> 1k Ohm resistor <--> BPR(GND)
   * Button side B <--> RPR(3v3)
   
@@ -61,6 +59,7 @@ When the button is pressed the A and B-sides become connected the input becomes 
 ## Steps
 
 ### Step 1. Play a tune
+
 
 
 
