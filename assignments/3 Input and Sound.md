@@ -42,6 +42,8 @@ Connect the breadboard power-rails to GND and 3V3.
 ### The buzzer circuit
 The buzzer is driven directly from the LOPY4 port but using a current reducing resistor. For higher volume it is adviceable to use a driver circuit.
 
+Place the buzzer with one leg on each side of the breadboard ravine. Connect one side to the microcontroller port and the other through a resistor to GND. 
+
  * LOPY4 P6 <--> Buzzer <--> 1k Ohm resistor <--> BPR(GND)
  
 ### The button circuit
