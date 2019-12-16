@@ -55,6 +55,8 @@ When the button is pressed the A and B-sides become connected the input becomes 
 
   * LOPY4 P11 <--> Button side A <--> 1k Ohm resistor <--> BPR(GND)
   * Button side B <--> RPR(3v3)
+  
+![Pull down button circuit](/images/pull-down-button.jpg)
 
 ## Steps
 
