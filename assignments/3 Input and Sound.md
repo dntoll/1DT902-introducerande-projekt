@@ -35,6 +35,8 @@ During the assignment you may discuss the assignment with students outside the g
 
 ### The buzzer circuit
 
+Port on LOPY4 --> Buzzer --> 1k Ohm resistor --> GND
+
 ### The button circuit
 
 ## Steps
