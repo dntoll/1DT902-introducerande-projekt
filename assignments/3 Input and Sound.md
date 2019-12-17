@@ -168,17 +168,18 @@ This assignment should be examined by a TA. Prepare for that by checking yoursel
 
 When completed you should ask a TA to check your setup and ask you the questions above.
 
-Test setup:
+### Test setup:
  * The time for key-presses should be printed as the example in Step 2. 
  * Test by "spamming" the button with lots of short presses. The song should start on the first press and continue without interruption or repeated plays. The printouts of times should continue while the song is played.
  * If lights blink in tune with music, make extra credit note. 
-Check Code:
+ 
+### Check Code:
  * The code should follow Flake8 code standard ( however lines may be longer than 79 characters )
  * Code should be DRY ( no unnecessary repeated statements )
  * Code should be divided into methods
  * The song should not be played in the eventhandler-function but started in a separate loop (or thread).
- * 
-Check knowledge: 
+ 
+### Check knowledge: 
  * Ask the group members individually two questions each of the above questions.
 
 
