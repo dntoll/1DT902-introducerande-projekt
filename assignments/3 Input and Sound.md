@@ -61,7 +61,7 @@ When the button is pressed the A and B-sides become connected the input becomes 
 
 ### Step 1. Button with contact bounce-reduction
 
-Run the following code
+Run the following code with a button circuit on P11:
 ```
 from machine import Pin
 
@@ -78,12 +78,32 @@ buttonPin = Pin('P11', mode=Pin.IN, pull=None)
 buttonPin.callback(Pin.IRQ_FALLING, buttonEventCallback)
 ```
 
-Test: Press the button a couple of times. 
-Note that not all presses results in a single event being launched. Due to *contact bounces* we might end up with multiple button-presses even if the button was only pressed once.
-https://www.allaboutcircuits.com/textbook/digital/chpt-4/contact-bounce/
+Press the button a couple of times. Note that not all presses results in a single event being launched. Due to *contact bounces* we might end up with multiple button-presses even if the button was only pressed once.
+Contact bounces are explained here: https://www.allaboutcircuits.com/textbook/digital/chpt-4/contact-bounce/
 
 Rewrite the code so that at most one button press can happen each second. 
-Hint use a variable to store the last time the button was pressed using utime.ticks_ms(). 
+ * Use a variable to store the last time the button was pressed using utime.ticks_ms(). 
+ * Ignore key-presses if the time since last press was less than a second.
+
+The program output should look like the following:
+```
+...
+Button was pressed: 3 time(s). Time since last 1462ms
+Button was pressed: 4 time(s). Time since last 1795ms
+Button was pressed: 5 time(s). Time since last 1021ms
+Ignored button press: Time left for next press is 809ms
+Ignored button press: Time left for next press is 431ms
+Button was pressed: 6 time(s). Time since last 1164ms
+Ignored button press: Time left for next press is 789ms
+Ignored button press: Time left for next press is 480ms
+Ignored button press: Time left for next press is 475ms
+Ignored button press: Time left for next press is 320ms
+Ignored button press: Time left for next press is 261ms
+Ignored button press: Time left for next press is 256ms
+Ignored button press: Time left for next press is 184ms
+Ignored button press: Time left for next press is 127ms
+Button was pressed: 7 time(s). Time since last 2711ms
+```
 
 ### Step 2. Press play for music
 
