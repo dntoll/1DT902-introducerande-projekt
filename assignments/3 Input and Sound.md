@@ -105,13 +105,16 @@ Ignored button press: Time left for next press is 127ms
 Button was pressed: 7 time(s). Time since last 2711ms
 ```
 
+
 ### Step 2. Press play for music
 
 The following code is from https://forum.pycom.io/topic/802/example-pwm-mariobros
 
 Rewrite the code so that the music is started when the button is pressed. 
- * The playing of the tune should not be run in the event handler.
- * Keypresses that happen during the playing of the tune should not result in cued up plays.
+ * The playing of the tune should not be run in the event handler. The event handler interrupts the currently running code on the microcontroller and thus locks up the execution until its done. To many interrupts may cause the microcontroller to be unresponsive. 
+ * Keypresses that happen during the playing of the tune should not result in cued up plays. 
+ * You may reduce the length of the Tune. 
+ * Test by "spamming" the button with lots of short presses, the song should start on the first press and continue without interruption or repeated plays.
 
 ```
 
