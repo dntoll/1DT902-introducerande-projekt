@@ -47,7 +47,7 @@ Place the buzzer with one leg on each side of the breadboard ravine. Connect one
  * LOPY4 P6 <--> Buzzer <--> 1k Ohm resistor <--> BPR(GND)
  
 ### The button circuit
-The button has two sides (We call them A and B) that are connected when the button is pressed. The button is placed over the breadboard ravine. We connect the A-side to the input port of the microcontroller. We also connect the A side through a 1k Ohm resistor to GND, this pulls the input port voltage down to GND which counts as a LOW (or 0)  when we read the input of the port through our code. The resistor is called a "pull-down resistor". We connect the B side of the button to 3v3. 
+The button has two sides with two legs each (We call them A and B) that are connected when the button is pressed. The button is placed over the breadboard ravine. We connect the A-side to the input port of the microcontroller. We also connect the A side through a 1k Ohm resistor to GND, this pulls the input port voltage down to GND. GND counts as a LOW (or 0) when we read the input of the port through our code. The resistor is called a "pull-down resistor". We connect the B side of the button to 3v3. 
 
 When the button is pressed the A and B-sides become connected the input becomes a HIGH (or 1) since we measure on the side now directly connected to 3v3. Please note that a current now runs through the 1kOhm connector. 
 
