@@ -58,7 +58,10 @@ When the button is pressed the A and B-sides become connected the input becomes 
 
 ## Steps
 
-### Step 1. Play a tune
+### Step 1. Press play for music
+
+https://forum.pycom.io/topic/802/example-pwm-mariobros
+
 
 
 
