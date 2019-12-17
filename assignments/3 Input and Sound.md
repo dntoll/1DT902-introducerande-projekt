@@ -12,13 +12,15 @@ During the assignment you may discuss the assignment with students outside the g
 
 ## Knowledge Components
  * Buzzers (Svenska: Summer) https://en.wikipedia.org/wiki/Buzzer
-    * Buzzer circuit
-    * Creating a PWM object
-    * Setting the duty cycle of the channel
- * Button 
-    * Button circuit with pull-down resistor
-    * Defining callback function on events
-    * Taking a utime.ticks_ms()
+    * Buzzer circuit https://www.instructables.com/id/How-to-use-a-Buzzer-Arduino-Tutorial/
+    * Creating a PWM object https://docs.pycom.io/firmwareapi/pycom/machine/pwm/
+    * Setting the duty cycle of the channel https://docs.pycom.io/firmwareapi/pycom/machine/pwm/
+ * Button https://learn.sparkfun.com/tutorials/switch-basics/all
+    * Button circuit with pull-down resistor https://learn.sparkfun.com/tutorials/pull-up-resistors
+    * Defining callback function on events https://docs.pycom.io/firmwareapi/pycom/machine/pin/
+    * Interrupts https://en.wikipedia.org/wiki/Interrupt
+    * Taking a utime.ticks_ms() https://docs.pycom.io/firmwareapi/micropython/utime/
+    * Contact Bounce https://www.allaboutcircuits.com/textbook/digital/chpt-4/contact-bounce/
 
 ## Ingredients
 
