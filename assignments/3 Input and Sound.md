@@ -152,7 +152,7 @@ for i in mario:
     time.sleep(0.15)
 ```
 
-## Step 3. Blinky lights to tune (Optional for extra fun)
+## Step 3. Blinky lights to tune. (Optional for extra credit/fun)
 
 Assign one LED for each tone (multiple tones can be attached to the same LED ) turn on LED's in tune with the music.
 
@@ -172,7 +172,8 @@ Check:
  * Test by "spamming" the button with lots of short presses. The song should start on the first press and continue without interruption or repeated plays. The printouts of times should continue while the song is played.
  * The song should not be played in the eventhandler-function but started in a separate loop (or thread).
  * Ask the group members individually two questions each of the above questions.
- 
+ * If the playing of tune is in a separate method, make extra credit note.
+ * If lights blink in tune with music, make extra credit note. 
 
 
   
