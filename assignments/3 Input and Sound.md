@@ -85,7 +85,7 @@ Rewrite the code so that at most one button press can happen each second.
  * Use a variable to store the last time the button was pressed using utime.ticks_ms(). 
  * Ignore key-presses if the time since last press was less than a second.
 
-The program output should look like the following:
+The program output should look like the following when quickly pressing the button:
 ```
 ...
 Button was pressed: 3 time(s). Time since last 1462ms
@@ -110,11 +110,11 @@ Button was pressed: 7 time(s). Time since last 2711ms
 
 The following code is from https://forum.pycom.io/topic/802/example-pwm-mariobros
 
-Rewrite the code so that the music is started when the button is pressed. 
+Rewrite the code so that the music is started when the button is pressed. Merge with code from step 1 so that button can still be pressed.
  * The playing of the tune should not be run in the event handler. The event handler interrupts the currently running code on the microcontroller and thus locks up the execution until its done. To many interrupts may cause the microcontroller to be unresponsive. 
  * Keypresses that happen during the playing of the tune should not result in cued up plays. 
- * You may reduce the length of the Tune. 
- * Test by "spamming" the button with lots of short presses, the song should start on the first press and continue without interruption or repeated plays.
+ * You may reduce the length of the Tune, but it must be longer than the time for contact bounce. 
+
 
 ```
 
@@ -152,7 +152,21 @@ for i in mario:
     time.sleep(0.15)
 ```
 
+## Step 3. Blinky lights to tune (Optional for extra fun)
+
+Assign one LED for each tone (multiple tones can be attached to the same LED ) turn on LED's in tune with the music.
 
 
-  
+## Examination
+Check yourself so that you know the answers to the following questions.
+ * What is the difference between a pull up and a pull-down button circuit?
+
+When completed you should ask a TA to check your setup. 
+
+ * The time for key-presses should be printed as the example in Step 2. 
+ * Test by "spamming" the button with lots of short presses, the song should start on the first press and continue without interruption or repeated plays. The printouts of times should continue.
+ * The song should not be played in the eventhandler-function but started in a separate loop (or thread).
+ 
+
+
   
