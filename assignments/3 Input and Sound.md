@@ -160,12 +160,18 @@ Assign one LED for each tone (multiple tones can be attached to the same LED ) t
 ## Examination
 Check yourself so that you know the answers to the following questions.
  * What is the difference between a pull up and a pull-down button circuit?
+ * What is contact bounceing and why would we be bothered?
+ * What is a microcontroller interrupt?
+ * Why should we keep the code in event-callbacks to a minimum?
+ * Why can the song continue while a the event-callback prints out key-presses?
 
-When completed you should ask a TA to check your setup. 
+When completed you should ask a TA to check your setup and ask you the questions above.
 
+Check:
  * The time for key-presses should be printed as the example in Step 2. 
- * Test by "spamming" the button with lots of short presses, the song should start on the first press and continue without interruption or repeated plays. The printouts of times should continue.
+ * Test by "spamming" the button with lots of short presses. The song should start on the first press and continue without interruption or repeated plays. The printouts of times should continue while the song is played.
  * The song should not be played in the eventhandler-function but started in a separate loop (or thread).
+ * Ask the group members individually two questions each of the above questions.
  
 
 
