@@ -35,7 +35,7 @@ Implement an algorithm for running a pedestrian crossing light. The traffic ligh
 
 States:
  * Traffic Get ready: Traffic Green + Yellow, Pedestrian Red, 1 second
- * Traffic Go: Traffic Green, Pedestrian Red, Continue until interrupted and then for 2 more seconds
+ * Traffic Go: Traffic Green, Pedestrian Red, 4 seconds but continue longer if not interrupted
  * Traffic Soon stop: Traffic Yellow, Pedestrian Red, 2 seconds
  * All stop: Traffic Red, Pedestrian Red, 1 second
  * Pedestrian Go: Traffic Red, Pedestrian Green, Speedy Tick sounds, 3 seconds
