@@ -8,7 +8,7 @@ To work with sound
 
 This task is going to be conducted in a group of two students. Both students must be active during all steps of the assignment.
 
-During the assignment you may discuss the assignment with students outside the group. You may help other groups but you may NOT do all steps for them. Note that these rules change between assignments.
+During the assignment you may discuss the assignment with students outside the group. You may help other groups but you may NOT do all steps for them, or share any code. Note that these rules change between assignments.
 
 ## Knowledge Components
  * Buzzers (Svenska: Summer) https://en.wikipedia.org/wiki/Buzzer
@@ -21,6 +21,15 @@ During the assignment you may discuss the assignment with students outside the g
     * Interrupts https://en.wikipedia.org/wiki/Interrupt
     * Taking a utime.ticks_ms() https://docs.pycom.io/firmwareapi/micropython/utime/
     * Contact Bounce https://www.allaboutcircuits.com/textbook/digital/chpt-4/contact-bounce/
+ * Code
+    * API: Reading time in ms. utime.ticks_ms()
+    * event callback functions https://docs.pycom.io/firmwareapi/pycom/machine/pin/
+    * global variables. https://www.programiz.com/python-programming/global-local-nonlocal-variables
+    * API: Create PWM timer PWM(0, frequency=i)
+    * timer duty cycle: duty_cycle(0.5) https://en.wikipedia.org/wiki/Duty_cycle
+    * API: Make the microcontroller sleep. time.sleep()
+    * declare function
+  
 
 ## Ingredients
 
