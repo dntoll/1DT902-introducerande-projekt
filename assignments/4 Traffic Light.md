@@ -42,7 +42,7 @@ States:
  * Pedestrian Soon Stop: Traffic Red, Pedestrian Green, Slower Tick Sounds, 1 second
  
  
- ### Step 3. Communicating Traffic lights
+
  
  
  
