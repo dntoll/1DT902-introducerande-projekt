@@ -51,7 +51,10 @@ Now its time to communicate using a mqtt-library to adafruit.io through the WiFi
 * Get the YOUR_AIO_KEY from https://io.adafruit.com/, click on "AIO Key"
 * Create a feed:  https://io.adafruit.com/ADAFRUIT_USER_NAME/feeds
 * Create a dashboard:  https://io.adafruit.com/ADAFRUIT_USER_NAME/dashboards/pycom
-* Import the mqtt library (just upload the mqtt.py file )
+ * Add a simple Toggle item to the dashboard that you connect to your feed.
+* Import the mqtt library (just upload the mqtt.py file ) ../lib/mqtt.py
+
+The following 
 
 ```python
 client = MQTTClient("device_id", "io.adafruit.com",user="ADAFRUIT_USER_NAME", password="YOUR_AIO_KEY", port=1883)
