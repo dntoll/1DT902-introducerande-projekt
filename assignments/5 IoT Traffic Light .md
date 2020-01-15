@@ -12,7 +12,8 @@ You may help other groups but you may NOT do all steps for them, or share any co
 
 ## Knowledge Components
 
- * mqtt https://en.wikipedia.org/wiki/MQTT
+ * mqtt wikipedia https://en.wikipedia.org/wiki/MQTT
+ * mqtt pycom https://docs.pycom.io/tutorials/all/mqtt/
  
 
 ## Ingredients
@@ -24,20 +25,54 @@ You may help other groups but you may NOT do all steps for them, or share any co
  
 ## Steps
 
-### Step 1. Get an Adafruit IO account
-### Step 2. Simple communication from pycom over WLAN
+
+### Step 1. Simple communication from pycom over WLAN
 To be able to communicate to io.adafruit.com we need a WiFi connection. Simplest is to share network from phone or use a guest network.
 
-'''
+Replace WIFI_NETWORK_ID with the sid of your network and YOUR_WIFI_PASSWORD with the passkey in the following code and make sure you can connect to your WIFI before continuing. 
+
+```python
 from network import WLAN
 wlan = WLAN(mode=WLAN.STA)
-wlan.connect("wifi_network_id", auth=(WLAN.WPA2, "SecretPassword"), timeout=5000)
+wlan.connect("WIFI_NETWORK_ID", auth=(WLAN.WPA2, "YOUR_WIFI_PASSWORD"), timeout=5000)
 while not wlan.isconnected():
     machine.idle()
 print("Connected to WiFi\n")
-'''
+```
+
+### Step 2. Get an Adafruit IO account
+
+ADAFRUIT_USER_NAME = 
 
 ### Step 3. Communicating trafficlight
+
+Now its time to communicate using a mqtt-library to adafruit.io through the WiFi network. 
+
+* Get the YOUR_AIO_KEY from https://io.adafruit.com/, click on "AIO Key"
+* Create a feed:  https://io.adafruit.com/ADAFRUIT_USER_NAME/feeds
+* Create a dashboard:  https://io.adafruit.com/ADAFRUIT_USER_NAME/dashboards/pycom
+* Import the mqtt library (just upload the mqtt.py file )
+
+```python
+client = MQTTClient("device_id", "io.adafruit.com",user="ADAFRUIT_USER_NAME", password="YOUR_AIO_KEY", port=1883)
+
+client.set_callback(sub_cb)
+client.connect()
+client.subscribe(topic="ADAFRUIT_USER_NAME/feeds/myfeed")
+
+#https://docs.pycom.io/tutorials/all/mqtt/
+
+
+while True:
+    print("Sending ON")
+    client.publish(topic="ADAFRUIT_USER_NAME/feeds/myfeed", msg="ON")
+    time.sleep(1)
+    print("Sending OFF")
+    client.publish(topic="ADAFRUIT_USER_NAME/feeds/myfeed", msg="OFF")
+    client.check_msg()
+    time.sleep(1)
+```
+
 ### Step 4. Syncing trafficlights
  
  
