@@ -57,14 +57,14 @@ Now its time to communicate using a mqtt-library to adafruit.io through the WiFi
 The following 
 
 ```python
+def sub_cb(topic, msg):
+   print(msg)
+   
 client = MQTTClient("device_id", "io.adafruit.com",user="ADAFRUIT_USER_NAME", password="YOUR_AIO_KEY", port=1883)
 
 client.set_callback(sub_cb)
 client.connect()
 client.subscribe(topic="ADAFRUIT_USER_NAME/feeds/myfeed")
-
-#https://docs.pycom.io/tutorials/all/mqtt/
-
 
 while True:
     print("Sending ON")
