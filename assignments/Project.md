@@ -1,6 +1,6 @@
-# 
+# The project
 
-This is a small programming project.
+This is a small programming project. 
 
 ## Rules
 
