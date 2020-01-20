@@ -1,7 +1,7 @@
 # The Traffic Light
 
 ## Goals
-To work with more code and more components.
+To work with more code and more components. To apply the things we have learned so far.
 
 ## Rules
 
@@ -11,38 +11,46 @@ During the assignment you may discuss the assignment with students outside the g
 You may help other groups but you may NOT do all steps for them, or share any code. Note that these rules change between assignments.
 
 ## Knowledge Components
-
+ * Apply knowledge components from previous assignments. 
 
 ## Ingredients
 
 ### Hardware
- One traffic light component.
- 
+ * Six LED's with resistors (2 x Red, 2 x yellow, 2 x green)
+ * Buzzer with resistor
+ * Button with resistor
  
  
 ## Steps
 
 
-### Step 1. Check all components
+### Step 1. Build Check all components
 
-Individually step through all the components so that they can be individually. 
+We are going to build a traffic light that can sit next to a pedestrian crossing. Thus it has three LEDs for traffic, two LED's for the pedestrian crossing and also a button circuit used by pedestrians to ask for green light. 
 
-Write a routine that waits for a button press, then lights up each LED and then beeps the buzzer before continuing.
+Individually build one circuit at a time and test those before continuing with the next
+* a traffic light (Red, yellow, green - LED's), 
+* a pedestrian crossing light (Red, Green LED) and a buzzer
+* a pedestrian button (button circuit and yellow light that turns on when button has been pressed and waitng for )
 
+When all hardware is set-up, write a routine that waits for a button press, then lights up each LED, and finally beeps the buzzer before waiting again.
 
 ### Step 2. Traffic light with pedestrian crossing
-Implement an algorithm for running a pedestrian crossing light. The traffic light has six LED's (Red, yellow, green, Red, Green, yellow), a button, and a buzzer. The button should represent a pedestrian wanting to cross the street, when pressed the yellow button LED should light up. 
 
-States:
- * Traffic Get ready: Traffic Green + Yellow, Pedestrian Red, 1 second
- * Traffic Go: Traffic Green, Pedestrian Red, 4 seconds but continue longer if not interrupted
- * Traffic Soon stop: Traffic Yellow, Pedestrian Red, 2 seconds
- * All stop: Traffic Red, Pedestrian Red, 1 second
- * Pedestrian Go: Traffic Red, Pedestrian Green, Speedy Tick sounds, 3 seconds
- * Pedestrian Soon Stop: Traffic Red, Pedestrian Green, Slower Tick Sounds, 1 second
- 
- 
+We are now going to model a pedestrian crossing light with python code. The traffic light is normally green.
+The button should represent a pedestrian wanting to cross the street, when pressed the yellow button LED should light up and traffic should halt and pedestrians should be allowed passage before the traffic light turns green again.
 
+We can model this by defining different states, each defined in its own function:
+
+#### States:
+ * TRAFFIC GO: Traffic Green LED, Pedestrian Red LED, Minimum 4 seconds but continue longer if not interrupted
+ * TRAFFIC SOON STOP: Traffic Yellow LED, Pedestrian Red LED, 2 seconds
+ * ALL STOP: Traffic Red LED, Pedestrian Red LED, 1 second
+ * PEDESTRIAN GO: Traffic Red LED, Pedestrian Green LED, Buzzer speedy Tick sounds, 3 seconds
+ * PEDESTRIAN SOON STOP: Traffic Red LED, Pedestrian Green LED, Slower Tick Sounds, 1 second
+ * TRAFFIC GET READY: Traffic Green LED + Yellow LED, Pedestrian Red LED, 1 second
+  
+You can now write a main loop that normally runs the TRAFFIC GO state if nothing happens. If the button is pressed (you need a 
  
  
  
