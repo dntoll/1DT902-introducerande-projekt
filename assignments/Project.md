@@ -47,7 +47,7 @@ In a group you are to present your project. The presentation is setup in the fol
 ### Examination
 
 Participation (individual)
- * Ok --- A student that participated at least half of the time
+ * Ok --- A student that participated at least half of the time of the average student.
  * Good --- Not used.
  * Excellent --- A Student that participated as much as the average student in the group (when removing students with F)
 
