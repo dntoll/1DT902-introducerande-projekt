@@ -50,7 +50,20 @@ We can model this by defining different states, each defined in its own function
  * PEDESTRIAN SOON STOP: Traffic Red LED, Pedestrian Green LED, Slower Tick Sounds, 1 second
  * TRAFFIC GET READY: Traffic Green LED + Yellow LED, Pedestrian Red LED, 1 second
   
-You can now write a main loop that normally runs the TRAFFIC GO state if nothing happens. If the button is pressed (you need a 
+You can now write a main loop that normally runs the TRAFFIC GO state if nothing happens. If the button is pressed a boolean variable is set (you need a buttonEventCallback-function) and the main loops starts calling the different state-methods in order before.
+
+
+### Examination
+
+The traffic light should work like described above and go back to green after having stepped through all the states. The exact waiting time is not as important as each of the states being reached and this should be repeatable.
+
+#### Check code
+ * The code should follow Flake8 code standard ( however lines may be longer than 79 characters )
+ * Code should be DRY ( no unnecessary repeated statements )
+ * Code should be divided into methods
+ * Method names should represent the content (for example state names)
+ 
+ 
  
  
  
