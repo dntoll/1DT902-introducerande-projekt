@@ -4,7 +4,14 @@ This is a small programming project.
 
 ## Rules
 
- * 
+For the project students work in groups consisting of three to four students. 
+
+All students must be active during the project. While not all students must participate in all meetings, no student may participate in less than half of the sessions. 
+
+Have a planning meeting in the beginning to set dates and times for group gatherings. We suggest planning several group meetings per week and with enough time on each gathering to do work. 
+
+During the planning meeting discuss the ambition-level of the group. Read the examination criteria and come up with a plan. 
+
 
 ## Requirements
 
@@ -20,7 +27,7 @@ The programming project should contain.
  You are to deliver everything needed to complete the project
  
  Project documentation on git in a /doc folder. Written in markdown.
-  * timelog.md --- A log of group-gatherings, date, record of who attended, time spent, and a short note on the focus of the gatherings.
+  * timelog.md --- A log of group-gatherings, date, record of which students attended, time spent, and a short note on the focus of the gatherings. End the timelog with an total time per student diagram. 
     * Ex. 2020-10-10, Daniel and Morgan, 2 hours, set up breadboard and tested components.
   * requirements.md --- Project requirements (feature-lists, or user-stories (https://www.mountaingoatsoftware.com/agile/user-stories) with enough detail so that one can read this and understand what the project is and does.
   * hardware.md --- A description of all hardware components and how to connect them. Take a couple of images.
@@ -34,10 +41,13 @@ The programming project should contain.
 In a group you are to present your project. The presentation is setup in the following way.
  * 5 minutes, prepare hardware for presentation, final tests
  * Present the project as a 30 seconds elevator pitch. This needs to be prepared and rehearsed multiple times. A supershort presentation of the group, some background of the project, and what the project does. 
- * 5 minutes demo of the project, show the most important features
+ * 5 minutes demo of the project, show the most important features, tell us about the future for the project, what could have been done better.
  * Clear the space for next group
  
 ### Examination
+
+Participation (individual)
+ * Ok --- 
 
 Deliverables
  * Ok --- Students have everything asked for under deliverables
@@ -57,5 +67,5 @@ Project size and complexity
 Presentation
  * Ok --- Students participated in presentation
  * Good --- Students are all active during the presentation. Presentation is prepared.
- * Excellent --- Presentation showcases the project in a nice way. Timelimits are respected. 
+ * Excellent --- Presentation showcases the project in a nice way, well rehearsed. Timelimits are respected. 
  
