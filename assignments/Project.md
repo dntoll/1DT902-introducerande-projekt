@@ -47,7 +47,9 @@ In a group you are to present your project. The presentation is setup in the fol
 ### Examination
 
 Participation (individual)
- * Ok --- 
+ * Ok --- A student that participated at least half of the time
+ * Good --- Not used.
+ * Excellent --- A Student that participated as much as the average student in the group (when removing students with F)
 
 Deliverables
  * Ok --- Students have everything asked for under deliverables
@@ -64,8 +66,8 @@ Project size and complexity
  * Good --- Students have deviced their own set of requirements and implemented and tested those.
  * Excellent --- The project does complex things, or contains a lot of requirements or much code. Proejct is well tested. Amaze us!
  
-Presentation
- * Ok --- Students participated in presentation
- * Good --- Students are all active during the presentation. Presentation is prepared.
- * Excellent --- Presentation showcases the project in a nice way, well rehearsed. Timelimits are respected. 
+Presentation (individual)
+ * Ok --- Student participated in group presentation
+ * Good --- Student is active during the presentation. 
+ * Excellent --- Student is well rehearsed. Timelimits are respected.
  
