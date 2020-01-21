@@ -1,9 +1,12 @@
 # Blink External LED's
 
-## Goals
-To connect basic circuits.
-To get LED-lights to blink.
-To work with GPIO ports and loops.
+## Introduction
+In this assignment we connect basic circuits with LED's on a breadbord and write python code that turns these on and off. 
+
+ * Get LED-lights to blink.
+ * Work with GPIO ports.
+ * Python loops
+ 
 
 ## Rules
 
