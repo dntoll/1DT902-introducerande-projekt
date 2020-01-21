@@ -2,9 +2,10 @@
 
 ## Introduction
 
-## Goals
- * Connect hardware 
+This assignment is all about getting to know the Atom development environment and to be able to run code on the pycom LoPy4 boards.
+
  * Install Atom and pymkr plugin
+ * Connect LoPy4 to a computer
  * Connect to board in Atom and run code in console (on the hardware)
  * Upload files and run code on the microcontroller
 
@@ -36,21 +37,23 @@ During the assignment you may discuss the assignment with students outside the g
  * pycom.rgbled() https://docs.pycom.io/firmwareapi/pycom/pycom/
  * time.sleep() https://docs.pycom.io/firmwareapi/micropython/utime/
 
-## Hardware setup
+
+
+## Steps
+Complete each step before progressing to the next.
+
+### Step 1. Hardware setup
 
 ![Setup for Getting Started](/images/1_hardware.png)
-
-* Connect the LOPY to the expansion board (doublecheck the direction)
-* Connect the Antenna to the Lopy 868MHz/915MHz (LoRa & Sigfox) antenna port (be careful, and note there are three connectors) See here: https://docs.pycom.io/gettingstarted/connection/lopy4/
+* Connect the LoPy4 on the expansion board. Doublecheck the direction, the LED should be in the same direction as the micro-USB connection.
+* Connect the Antenna to the Lopy 868MHz/915MHz (LoRa & Sigfox) antenna port. Be careful, and note there are three connectors. Check this: https://docs.pycom.io/gettingstarted/connection/lopy4/
 * Connect the usb-cable to both computer and board
 
-## Software setup
+### Step 2. Software setup
  * Download and install Atom
  * Install pymakr plugin in Atom (using the package manager, settings Packages) 
 
-## Steps
-
-### Step 1
+### Step 3.
 Make sure the LoPy board is connected to a computer with atom and pymkr installed.
 
 When the board is properly setup you can run micropython code directly on it using the pymakr-console. The output from the commands are sent to the computer so that you can interact with the board. 
@@ -62,10 +65,10 @@ Write help() in the pycmkr console and press enter, this should give you output 
 
 The help command prints some useful short-cuts you can use to for example interrupt a board that is stuck in a loop so that you can upload new code. 
 
-#### Expected output 1. Run help() on board
+#### Expected output. Run help() on board
 ![Goal state 1](/images/1_goal_state_1.png)
 
-### Step 2. Run custom code on the board
+### Step 4. Run custom code on the board
 Create project folder in Atom, with a main.py file and run it. 
 
 Using Atom, create a new file (main.py) with the following content but replace "Name 1" and "Name 2" with group members usernames
@@ -79,7 +82,7 @@ When the upload has completed the code willrun on the board and should produce t
 #### Expected output 2. 
 ![Goal state 2](/images/1_goal_state_2.png)
 
-### Step 3. Follow a tutorial and modify code, blink a light.
+### Step 5. Follow a tutorial and modify code, blink a light.
 Use the built in RGB-LED-light to blink in different colors.
 
 Read and complete this tutorial
