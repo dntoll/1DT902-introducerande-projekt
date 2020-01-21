@@ -50,7 +50,7 @@ We can model this by defining different states, each defined in its own function
  * ALL STOP: Traffic Red LED, Pedestrian Red LED, 1 second
  * PEDESTRIAN GO: Traffic Red LED, Pedestrian Green LED, Buzzer speedy Tick sounds, 3 seconds
  * PEDESTRIAN SOON STOP: Traffic Red LED, Pedestrian Green LED, Slower Tick Sounds, 1 second
- * TRAFFIC GET READY: Traffic Green LED + Yellow LED, Pedestrian Red LED, 1 second
+ * TRAFFIC GET READY: Traffic Red LED + Traffic Yellow LED, Pedestrian Red LED, 1 second
 
  
  ![State transitions](../images/states.svg)
