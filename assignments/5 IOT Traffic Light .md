@@ -1,7 +1,11 @@
-# The Traffic Light
+# The IOT Traffic Light
 
-## Goals
-To synchronize with cloud using mqtt
+The previous tasks has been a single LoPy4 device on its own without any communication. In this final assignment we connect our LoPy4 to internet over WiFi and push information to an online server. 
+
+ * Simple Internet Of Things (IoT) scenario
+ * Connect Lopy4 by wifi. 
+ * Synchronize with cloud using mqtt
+ 
 
 ## Rules
 
@@ -19,15 +23,12 @@ You may help other groups but you may NOT do all steps for them, or share any co
 ## Ingredients
 
 ### Hardware
- One traffic light component.
- 
- 
+ One LoPy4 unit.
  
 ## Steps
 
-
 ### Step 1. Simple communication from pycom over WLAN
-To be able to communicate to io.adafruit.com we need a WiFi connection. Simplest is to share network from phone or use a guest network.
+To be able to communicate to io.adafruit.com we need a WiFi connection. There is very little data sent so easiest is to share network from a smartphone, or use a guest WiFi-network.
 
 Replace WIFI_NETWORK_ID with the sid of your network and YOUR_WIFI_PASSWORD with the passkey in the following code and make sure you can connect to your WIFI before continuing. 
 
@@ -37,22 +38,28 @@ wlan = WLAN(mode=WLAN.STA)
 wlan.connect("WIFI_NETWORK_ID", auth=(WLAN.WPA2, "YOUR_WIFI_PASSWORD"), timeout=5000)
 while not wlan.isconnected():
     machine.idle()
-print("Connected to WiFi\n")
+print("Connected to WiFi")
 ```
+
+The above scrips should eventually connect, not very fast to WiFi and show "Connected to WiFi".
+
 
 ### Step 2. Get an Adafruit IO account
 
-ADAFRUIT_USER_NAME = 
+Go to https://io.adafruit.com/  and sign up for a free account. Make note of your ADAFRUIT_USER_NAME since we need to use it in the following. When logged in, get the YOUR_AIO_KEY from https://io.adafruit.com/, click on "AIO Key"
+
+ * ADAFRUIT_USER_NAME
+ * YOUR_AIO_KEY
 
 ### Step 3. Communicating trafficlight
 
 Now its time to communicate using a mqtt-library to adafruit.io through the WiFi network. 
 
-* Get the YOUR_AIO_KEY from https://io.adafruit.com/, click on "AIO Key"
-* Create a feed:  https://io.adafruit.com/ADAFRUIT_USER_NAME/feeds
+On https://io.adafruit.com/
+* Create a feed "myfeed" at https://io.adafruit.com/ADAFRUIT_USER_NAME/feeds (replace ADAFRUIT_USER_NAME with your username )
 * Create a dashboard:  https://io.adafruit.com/ADAFRUIT_USER_NAME/dashboards/pycom
  * Add a simple Toggle item to the dashboard that you connect to your feed.
-* Import the mqtt library (just upload the mqtt.py file ) ../lib/mqtt.py
+* Import the mqtt library (just upload the mqtt.py file ) [library](../lib/mqtt.py)
 
 The following 
 
@@ -76,10 +83,14 @@ while True:
     time.sleep(1)
 ```
 
+ 
+ 
+ 
+​
+82
 ### Step 4. Syncing trafficlights
+83
  
+84
  
-
- 
- 
- 
+85
