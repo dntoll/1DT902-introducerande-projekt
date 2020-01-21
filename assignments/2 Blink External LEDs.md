@@ -26,6 +26,7 @@ During the assignment you may discuss the assignment with students outside the g
  
 ### Software 
  * Everything from task 1.
+ * Atom with pymakr plugin
 
 ### Knowledge components
  * Breadboards (kopplingsdäck) https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all
@@ -39,27 +40,27 @@ During the assignment you may discuss the assignment with students outside the g
  * Make the thread sleep for a second  ```python  time.sleep(seconds) ```
  * Loops. ```python  while Condition: ``` and/or ```python  for element in array: ```
 
-## Hardware setup
+ 
+## Steps
+
+
+### Step. Connect Three LED circuits
 When changing components on the breadboard, always have the USB disconnected!
  * Disconnect the USB cable. 
- * Connect the GND on LOPY4 to the black power rail on the breadboard. Also connect 3V3 to the red power rail. See breadboard tutorial if needed.
+ * Connect the GND on LOPY4 to the black power rail(BPR) on the breadboard. Also connect 3V3 to the red power rail(RPR). See breadboard tutorial if needed.
  * Connect the three LED circuits as in this video https://www.youtube.com/watch?v=yQ2-yVXFMeE but use the power rails as + and - of the battery and use a 560 Ohm resistor. 
  * Make sure each LED lights up when you connect the USB-cable. 
  
-### Connections 
+#### Connections 
  * <--> means a cable or connection
  * LOPY4 GND <--> Black Power Rail (BPR)
  * LOPY4 3V3 <--> Red Power Rail (RPR)
  * RPR(3V3) <--> [ Anode - LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
  
  ![LED Circuit, Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/LED_circuit.svg/1200px-LED_circuit.svg.png)
- 
-## Software setup
- * Atom with pymakr plugin
 
-## Steps
 
-### Driving LED with GPIO  
+### Step. Driving LED with GPIO  
 IMPORTANT: We are now going to connect external LED's to the microcontroller. The LOPY 4 microcontroller provides General Purpose Input Output (GPIO)-ports that can be used to communicate with external components. The ports are a bit sensitive and should not be used to directly drive heavy loads (like a motor).
 
 The Datasheet for LOPY4 says "Absolute MAX per pin 12mA, recommended 6mA" which means we must reduce current. If more current is needed, additional components (eg. transistors, or drivers) can be used. Thankfully our scenario does not require much current and we can reduce the current flow by having a 560 Ohm resistor in series with each LED we connect.
@@ -78,7 +79,7 @@ time.sleep(1) # Sleep for a second
 redLED.value(0) # Send a 0 to the GPIO to turn the LED off
 ```
 
-### Components 
+#### Connections 
  * LOPY4 GND <--> Black Power Rail (BPR)
  * LOPY4 P8 <--> [ Anode - Red LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
  * LOPY4 P9 <--> [ Anode - Yellow LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
