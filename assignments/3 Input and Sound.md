@@ -2,8 +2,8 @@
 
 In this assignment we are going to work with user-input through a button circuit and also introduce a new form of output (sound). 
 
- * To work with input
- * To work with sound
+ * Work with input
+ * Work with sound
 
 ## Rules
 
@@ -44,9 +44,6 @@ During the assignment you may discuss the assignment with students outside the g
 ### Software 
  * Everything from task 2.
  
-## Hardware setup
-
-
 
 ## Steps
 
