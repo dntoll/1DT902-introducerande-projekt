@@ -45,14 +45,16 @@ During the assignment you may discuss the assignment with students outside the g
 
 
 ### Step. Connect Three LED circuits
-When changing components on the breadboard, always have the USB disconnected!
+We are going to connect three LED circuits on the breadboard and power these from the GND(-) and 3V3(+) connections on the LoPy4 board. See breadboard tutorial if needed.
+WARNING! When changing components on the breadboard, always have the USB disconnected!
+
  * Disconnect the USB cable. 
- * Connect the GND on LOPY4 to the black power rail(BPR) on the breadboard. Also connect 3V3 to the red power rail(RPR). See breadboard tutorial if needed.
+ * Connect the GND on LOPY4 to the black power rail(BPR) on the breadboard. Also connect 3V3 to the red power rail(RPR). 
  * Connect the three LED circuits as in this video https://www.youtube.com/watch?v=yQ2-yVXFMeE but use the power rails as + and - of the battery and use a 560 Ohm resistor. 
  * Make sure each LED lights up when you connect the USB-cable. 
  
 #### Connections 
- * <--> means a cable or connection
+Summary of connections. "<-->" means a cable or connection
  * LOPY4 GND <--> Black Power Rail (BPR)
  * LOPY4 3V3 <--> Red Power Rail (RPR)
  * RPR(3V3) <--> [ Anode - LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
@@ -61,14 +63,19 @@ When changing components on the breadboard, always have the USB disconnected!
 
 
 ### Step. Driving LED with GPIO  
-IMPORTANT: We are now going to connect external LED's to the microcontroller. The LOPY 4 microcontroller provides General Purpose Input Output (GPIO)-ports that can be used to communicate with external components. The ports are a bit sensitive and should not be used to directly drive heavy loads (like a motor).
-
-The Datasheet for LOPY4 says "Absolute MAX per pin 12mA, recommended 6mA" which means we must reduce current. If more current is needed, additional components (eg. transistors, or drivers) can be used. Thankfully our scenario does not require much current and we can reduce the current flow by having a 560 Ohm resistor in series with each LED we connect.
+IMPORTANT: We are going to connect external LED's to the microcontroller. The LoPy4 microcontroller provides "General Purpose Input Output"-ports also called GPIO-ports that can be used to communicate with external components. The ports are a bit sensitive and should not be used to directly drive heavy loads (like a motor). The Datasheet for LOPY4 says "Absolute MAX per pin 12mA, recommended 6mA" which means we must reduce current by using resistors. If more current is needed, additional components (eg. transistors, or drivers) can be used. Thankfully this assignment does not require high current and we can reduce the current flow by having a 560 Ohm resistor in series with each LED we connect.
 
  * Disconnect the USB cable again
- * Remove the wire going into the red power rail but keep the GND cable.
- * Replace the wires going into the anode of the LED from the red (3V3) power rail with a cable going from the LED anode to port P8 to p10 of the LOPY4.
- * Upload the following code in the main.py file
+ * For each of the LED's, remove the wire going from the red power rail to the anode (but keep the GND cable and resistor).
+ * Introduce new cables going from the P8-10 port on the LoPy4 to the LED anodes as in connections below.
+ 
+ #### Connections 
+ * LOPY4 GND <--> Black Power Rail (BPR)
+ * LOPY4 P8 <--> [ Anode - Red LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
+ * LOPY4 P9 <--> [ Anode - Yellow LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
+ * LOPY4 P10 <--> [ Anode - Green LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
+ 
+ When done, connect USB again and upload the following code in the main.py file.
 
 ```python
 import time
@@ -79,19 +86,13 @@ time.sleep(1) # Sleep for a second
 redLED.value(0) # Send a 0 to the GPIO to turn the LED off
 ```
 
-#### Connections 
- * LOPY4 GND <--> Black Power Rail (BPR)
- * LOPY4 P8 <--> [ Anode - Red LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
- * LOPY4 P9 <--> [ Anode - Yellow LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
- * LOPY4 P10 <--> [ Anode - Green LED - Cathode ] <--> [ 560 Ohm resistor ] <--> BPR(GND)
-
 #### Expected output
 
-The Red LED lights up after the LOPY4 has booted, is on for one second and then turns off. The behaviour is repeated if the board is resetted.
+The Red LED should light up after the LOPY4 has booted, should stay lit for one second, and turn off. The behaviour is repeated if the board is resetted by pressing the reset button on the LoPy4 board (next to the RGB-LED on the side of the microUSB.
 
 ### Driving multiple LED's with GPIO
 
-Now adjust the code so that the three LED's blink as in the following:
+Now adjust the code so that all three LED's blink like this:
  * RED lights up for 1 s. Other LEDs are unlit.
  * GREEN lights up for 1 s. Other LEDs are unlit.
  * YELLOW lights up for 1 s. Other LEDs are unlit.
