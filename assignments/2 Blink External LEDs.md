@@ -35,9 +35,9 @@ During the assignment you may discuss the assignment with students outside the g
  * Microcontroller GPIO https://en.wikipedia.org/wiki/General-purpose_input/output
   * LOPY4 Datasheet https://docs.pycom.io/gitbook/assets/specsheets/Pycom_002_Specsheets_LoPy4_v2.pdf 
   * Make a GPIO port an output https://docs.pycom.io/firmwareapi/pycom/machine/pin/
-  * Turn GPIO output on and off pin.value([value])
- * Make the thread sleep for a second  time.sleep(seconds)
- * Loops 
+  * Turn GPIO output on and off. ```python pin.value([value]) ```
+ * Make the thread sleep for a second  ```python  time.sleep(seconds) ```
+ * Loops. while True:
 
 ## Hardware setup
 
