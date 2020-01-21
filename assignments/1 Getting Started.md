@@ -49,6 +49,8 @@ Complete each step before progressing to the next.
 * Connect the Antenna to the Lopy 868MHz/915MHz (LoRa & Sigfox) antenna port. Be careful, and note there are three connectors. Check this: https://docs.pycom.io/gettingstarted/connection/lopy4/
 * Connect the usb-cable to both computer and board
 
+WARNING! "Be gentle when plugging and unplugging from the USB connector. Whilst the USB connector is soldered and is relatively strong, if it breaks off it can be very difficult to fix."
+
 ### Step 2. Software setup
  * Download and install Atom
  * Install pymakr plugin in Atom (using the package manager, settings Packages) 
