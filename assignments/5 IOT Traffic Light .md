@@ -51,6 +51,16 @@ Go to https://io.adafruit.com/  and sign up for a free account. Make note of you
  * ADAFRUIT_USER_NAME
  * YOUR_AIO_KEY
 
+
+Note that you get the following in a free account.
+
+ * 30 data points per minute
+ * 30 days of data storage
+ * 10 feeds
+ * 5 dashboards
+
+
+
 ### Step 3. Communicating trafficlight
 
 Now its time to communicate using a mqtt-library to adafruit.io through the WiFi network. 
@@ -59,9 +69,9 @@ On https://io.adafruit.com/
 * Create a feed "myfeed" at https://io.adafruit.com/ADAFRUIT_USER_NAME/feeds (replace ADAFRUIT_USER_NAME with your username )
 * Create a dashboard:  https://io.adafruit.com/ADAFRUIT_USER_NAME/dashboards/pycom
  * Add a simple Toggle item to the dashboard that you connect to your feed.
-* Import the mqtt library (just upload the mqtt.py file ) [library](../lib/mqtt.py)
+* Import the mqtt library. Download [mqtt.py](../lib/mqtt.py) and upload it to the LoPy4 device. 
 
-The following 
+Then run following code after changing the needed string constants
 
 ```python
 def sub_cb(topic, msg):
@@ -76,21 +86,12 @@ client.subscribe(topic="ADAFRUIT_USER_NAME/feeds/myfeed")
 while True:
     print("Sending ON")
     client.publish(topic="ADAFRUIT_USER_NAME/feeds/myfeed", msg="ON")
-    time.sleep(1)
+    time.sleep(3)
     print("Sending OFF")
     client.publish(topic="ADAFRUIT_USER_NAME/feeds/myfeed", msg="OFF")
     client.check_msg()
-    time.sleep(1)
+    time.sleep(3)
 ```
 
- 
- 
- 
-​
-82
+
 ### Step 4. Syncing trafficlights
-83
- 
-84
- 
-85
