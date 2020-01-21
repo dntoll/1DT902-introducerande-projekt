@@ -37,16 +37,16 @@ During the assignment you may discuss the assignment with students outside the g
   * Make a GPIO port an output https://docs.pycom.io/firmwareapi/pycom/machine/pin/
   * Turn GPIO output on and off. ```python pin.value([value]) ```
  * Make the thread sleep for a second  ```python  time.sleep(seconds) ```
- * Loops. while True:
+ * Loops. ```python  while Condition: ``` and/or ```python  for element in array: ```
 
 ## Hardware setup
-
- * Disconnect the USB cable. When changing components on the breadboard, always have the USB disconnected!
- * Connect the GND to the black power rail and 3V3 to the red power rails of the breadboard (See breadboard tutorial if needed)
+When changing components on the breadboard, always have the USB disconnected!
+ * Disconnect the USB cable. 
+ * Connect the GND on LOPY4 to the black power rail on the breadboard. Also connect 3V3 to the red power rail. See breadboard tutorial if needed.
  * Connect the three LED circuits as in this video https://www.youtube.com/watch?v=yQ2-yVXFMeE but use the power rails as + and - of the battery and use a 560 Ohm resistor. 
  * Make sure each LED lights up when you connect the USB-cable. 
  
-### Components 
+### Connections 
  * <--> means a cable or connection
  * LOPY4 GND <--> Black Power Rail (BPR)
  * LOPY4 3V3 <--> Red Power Rail (RPR)
