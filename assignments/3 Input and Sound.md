@@ -1,8 +1,9 @@
 # Blink External LED's
 
-## Goals
-To work with input
-To work with sound
+In this assignment we are going to work with user-input through a button circuit and also introduce a new form of output (sound). 
+
+ * To work with input
+ * To work with sound
 
 ## Rules
 
@@ -45,6 +46,10 @@ During the assignment you may discuss the assignment with students outside the g
  
 ## Hardware setup
 
+
+
+## Steps
+
 ### Breadboard circuit
 Connect the breadboard power-rails to GND and 3V3.
 
@@ -67,8 +72,6 @@ When the button is pressed the A and B-sides become connected the input becomes 
   * Button side B <--> RPR(3v3)
   
 ![Pull down button circuit](/images/pull-down-button.jpg)
-
-## Steps
 
 ### Step 1. Button with contact bounce-reduction
 
