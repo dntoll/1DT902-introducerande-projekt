@@ -181,7 +181,7 @@ When completed you should ask a TA to check your setup and ask you the questions
 
 ### Test setup:
  * The time for key-presses should be printed as the example in Step 2. 
- * Test by "spamming" the button with lots of short presses. The song should start on the first press and continue without interruption or repeated plays. The printouts of times should continue while the song is played.
+ * Test by "spamming" the button with lots of short presses. The song should start on the first press and continue without interruption until it ends. The buttonclicks do not stack and after the song is over id does not restart unless a new click is introduced afterwards. The printouts of times should continue while the song is played.
  * If lights blink in tune with music, make extra credit note. 
  
 ### Check Code:
