@@ -52,7 +52,8 @@ We can model this by defining different states, each defined in its own function
  * PEDESTRIAN SOON STOP: Traffic Red LED, Pedestrian Green LED, Slower Tick Sounds, 1 second
  * TRAFFIC GET READY: Traffic Green LED + Yellow LED, Pedestrian Red LED, 1 second
 
-
+ 
+ ![State transitions](../images/states.svg)
 
 You can now write a main loop that normally runs the TRAFFIC GO state-function if nothing happens. If the button is pressed a boolean variable is set and the main loops starts calling the different state-methods in order.
 
