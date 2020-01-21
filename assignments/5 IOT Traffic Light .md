@@ -59,6 +59,7 @@ Note that you get the following in a free account.
  * 10 feeds
  * 5 dashboards
 
+When exceeding the data points I seem to get ECONNRESET
 
 
 ### Step 3. Communicating trafficlight
