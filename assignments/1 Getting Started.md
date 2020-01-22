@@ -65,7 +65,12 @@ Write help() in the pycmkr console and press enter, this should give you output 
 >>>help()
 ```
 
-The help command prints some useful short-cuts you can use to for example interrupt a board that is stuck in a loop so that you can upload new code. 
+The help command prints some useful short-cuts you can use to for example interrupt a board that is stuck in a loop so that you can upload new code.
+
+HINT! To reset the device 
+ * Click inside the PyMkr console then press CTRL+F
+ * Press the reset-button on the LOPY4 device, next to the RGB LED!
+
 
 #### Expected output. Run help() on board
 ![Goal state 1](/images/1_goal_state_1.png)
