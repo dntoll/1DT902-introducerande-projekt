@@ -101,6 +101,38 @@ while True:
     time.sleep(3)
 ```
 
-> The mqtt connection has been slightly unstable for me. Therefore I suggest writing your code so that it can reset connections in case of errors...
 
-### Step 4. Syncing trafficlights
+### Step 4. Resilient connections
+
+> Daniel: The mqtt connection to Adafruit IO has been very unstable for me. Therefore I suggest writing your code so that it can reset connections in case of errors. Thus we want to be able to be disconnected from both WIFI and Adafruit IO and automatically reconnect again.
+
+To accomplish this I suggest writing most of your code inside a while-True loop and have a branching statement (if-elif-else) that directs the application to different actions. 
+
+
+Consider the following pseudocode:
+
+```
+Repeat Forever
+ if WIFI is not connected
+   connect to wifi
+ else if adafruit IO is not connected
+   connect to adafruit IO
+ else if we have something to "publish"
+   publish something
+ else
+    check for incomming messages from adafrui IO
+```
+
+In many cases something can go wrong, thus you need to add one or more try-except statements. In my case I only had one try-except that catches OSError inside the loop statement
+
+```python
+while True:
+    try:
+        ... all the if-statements in pseudo code...
+    except OSError as er:
+        print("failed: " + str(er)) # give us some idea on what went wrong
+        client.disconnect() # disconnect from adafruit IO to free resources
+        adafruit_connected = False # mark us disconnected so we know that we should connect again 
+        
+```
+
