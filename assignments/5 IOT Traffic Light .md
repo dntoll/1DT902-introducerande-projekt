@@ -62,9 +62,9 @@ Note that you get the following in a free account.
 When exceeding the data points I seem to get ECONNRESET
 
 
-### Step 3. Communicating trafficlight
+### Step 3. subscription and publishing
 
-Now its time to communicate using a mqtt-library to adafruit.io through the WiFi network. 
+Now its time to communicate using a mqtt-library to adafruit.io through the WiFi network. First step is just to verify that we got communication going in both directions.
 
 On https://io.adafruit.com/
 * Create a feed "myfeed" at https://io.adafruit.com/ADAFRUIT_USER_NAME/feeds (replace ADAFRUIT_USER_NAME with your username )
@@ -72,9 +72,16 @@ On https://io.adafruit.com/
  * Add a simple Toggle item to the dashboard that you connect to your feed.
 * Import the mqtt library. Download [mqtt.py](../lib/mqtt.py) and upload it to the LoPy4 device. 
 
-Then run following code after changing the needed string constants
+Then combine the following code with the WLAN code. Dont forget to change the needed string constants so that it uses your account.
 
 ```python
+
+#Before WLAN
+from mqtt import MQTTClient
+import machine
+import time
+
+#After WLAN connection
 def sub_cb(topic, msg):
    print(msg)
    
@@ -94,5 +101,6 @@ while True:
     time.sleep(3)
 ```
 
+> The mqtt connection has been slightly unstable for me. Therefore I suggest writing your code so that it can reset connections in case of errors...
 
 ### Step 4. Syncing trafficlights
